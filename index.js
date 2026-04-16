@@ -255,8 +255,6 @@ function playerNumbers(teamName) {
 
 function playerStats(playerName) {
 
-    const playersArray = []
-
     for (const key in data) {
 
         for (const subKey in data[key]) {
@@ -338,14 +336,16 @@ function bigShoeRebounds() {
 
 }
 
-// console.log(numPointsScored("Brendan Hayword"))
+console.log(numPointsScored("Brendan Hayword"))
 
-// console.log(teamColors("Brooklyn Nets"))
+console.log(shoeSize("Brendan Hayword"))
 
-// console.log(teamNames())
+console.log(teamColors("Brooklyn Nets"))
 
-// console.log(playerNumbers("Brooklyn Nets"))
+console.log(teamNames())
 
-// console.log(playerStats("Alan Anderson"))
+console.log(playerNumbers("Brooklyn Nets"))
+
+console.log(playerStats("Alan Anderson"))
 
 console.log(bigShoeRebounds())
