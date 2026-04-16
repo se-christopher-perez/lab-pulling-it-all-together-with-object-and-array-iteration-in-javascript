@@ -134,7 +134,6 @@ function numPointsScored(playerName) {
 
                             if (stat === "points") {
 
-                                console.log(stat)
                                 return data[key][subKey][player][stat]
 
                             }
@@ -169,7 +168,6 @@ function shoeSize(playerName) {
 
                             if (stat === "shoe") {
 
-                                console.log(stat)
                                 return data[key][subKey][player][stat]
 
                             }
@@ -226,15 +224,9 @@ function playerNumbers(teamName) {
 
             for (const subKey in data[key]) {
 
-                console.log(subKey)
-                console.log(data[key][subKey])
-
                 if (subKey === "players") {
 
                     for (const player in data[key][subKey]) {
-
-                        console.log(player)
-                        console.log(data[key][subKey][player]["number"])
 
                         playersNumberArray.push(data[key][subKey][player]["number"])
 
@@ -262,9 +254,6 @@ function playerStats(playerName) {
             if (subKey === "players") {
 
                 for (const player in data[key][subKey]) {
-
-                    console.log(player)
-                    console.log(data[key][subKey][player])
 
                     if (player === playerName) {
 
